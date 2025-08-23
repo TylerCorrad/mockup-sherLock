@@ -1,6 +1,7 @@
-function switchToLogin() {}
-function switchToRegister() {}
-function setInputs(state) {
-  if (state) {
-  }
+function getOTP() {
+  return Array.from(document.querySelectorAll(".otp-input"))
+    .map((input) => input.value)
+    .join("");
 }
+
+console.log(getOTP());
