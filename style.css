@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --dark-blue1: #051d24;
+  --dark-blue: #245b5f;
+  --dark-blue2: #021116;
+  --light-blue: #94ced2;
+  --light-yellow: #ffe98a;
+  --light-yellow2: #cec393;
+  --dark-yellow: #5e5732;
+  --orange: #e7812b;
+  --orange2: #974613;
+}
+body {
+  background-color: var(--dark-blue1);
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 3.5rem;
+  color: var(--light-yellow);
+  font-weight: 800;
+}
+h2 {
+  font-size: 2.5rem;
+  color: var(--light-yellow);
+  font-style: italic;
+}
+h3 {
+  font-size: 1.5rem;
+  color: var(--light-yellow);
+  font-style: italic;
+}
+.titulo {
+  margin-bottom: 20;
+}
+.btn-custom {
+  background-color: var(--orange);
+  font-weight: 800;
+  color: var(--dark-blue);
+  width: fit-content;
+  align-self: center;
+}
+.btn-custom:hover {
+  background-color: var(--orange2);
+  color: var(--dark-blue1);
+}
+#inicio {
+  padding: 100px;
+}
+#intro-header {
+  width: 100%;
+}
+#intro {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 100px;
+}
+#title {
+  margin-bottom: 4%;
+  align-self: flex-start;
+}
+#slogan {
+  margin-bottom: 10%;
+  align-self: flex-start;
+}
+#logo {
+  width: 300px;
+}
+#container-instant-entry {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+#instant-entry {
+  font-size: 20px;
+  width: 270px;
+}
+#login-registro {
+  padding-right: 50px;
+  height: max-content;
+}
+.rectangle {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+}
+#login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 62px;
+  padding-right: 62px;
+}
+#form-title {
+  align-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.form-descriptor {
+  color: var(--light-yellow);
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+#form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#form-content > input {
+  background-image: linear-gradient(
+    to right,
+    var(--dark-blue),
+    var(--light-yellow2)
+  );
+  background-color: var(--dark-blue);
+  width: 100%;
+  border-radius: 10px;
+  border: solid var(--light-yellow);
+  border-width: 1px;
+  color: var(--light-yellow);
+  padding: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#form-content > input::placeholder {
+  font-style: italic;
+  color: var(--light-yellow);
+}
+
+#form-content > input:focus {
+  outline: 0;
+}
+
+.btn-custom-dark {
+  background-color: var(--dark-blue1);
+  color: var(--light-yellow);
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn-custom-dark:hover {
+  background-color: var(--dark-blue2);
+  color: var(--dark-yellow);
+}
+
+#form-button {
+  width: fit-content;
+  align-self: center;
+  justify-self: end;
+  margin: 32px;
+}
+#toggle-text {
+  color: var(--light-yellow);
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  #intro {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding-left: 0;
+    gap: 0;
+  }
+  #intro-header {
+    grid-row: span 2;
+    grid-column: span 1;
+    padding-right: 20px;
+  }
+  #title {
+  }
+  #logo {
+    width: 200px;
+    grid-row: span 2;
+  }
+  #container-instant-entry {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #instant-entry {
+    width: fit-content;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  #login-registro {
+    height: fit-content;
+    padding-right: 10px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  #inicio {
+    padding: 40px;
+    padding-right: 0;
+  }
+  #title {
+    font-size: 50px;
+  }
+  #slogan {
+    font-size: 30px;
+  }
+  #logo {
+    margin-top: 20px;
+    width: 150px;
+  }
+  #form-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 460px) {
+  #title {
+    font-size: 25px;
+  }
+  #slogan {
+    font-size: 16px;
+  }
+  #logo {
+    width: 80px;
+  }
+  #container-instant-entry {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #instant-entry {
+    font-size: 12px;
+    padding: 5px;
+  }
+  #login-card {
+    padding: 15px;
+  }
+  #form-title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .form-descriptor {
+    font-size: 14px;
+  }
+  #form-content > input {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #form-button {
+    margin: 15px;
+    font-size: 14px;
+  }
+  #toggle-text {
+    font-size: 12px;
+  }
+}
