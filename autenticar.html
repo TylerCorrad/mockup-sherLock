@@ -14,57 +14,65 @@
     <link href="./script.html" rel="script" />
   </head>
   <body class="container mt-4">
-    <div id="confirmation-header" class="row mb-3">
+    <div id="confirmation-header" class="row">
       <h1 id="confirmation-title" class="col-12">Abre tu correo</h1>
     </div>
-    <div class="row" id="confirmation-body">
+    <div class="row" id="logo-n-p">
       <img
         src="./img/logo.png"
         class="logo col-12 col-md-6 col-lg-6 col-xl-4 mb-3"
         id="confirmation-logo"
       />
-      <p class="parragraph-yellow col-xl-8 col-sm-8" id="confirmation-p">
-        Hemos enviado un mensaje de confirmación a la dirección de correo que
-        has proporcionado. para iniciar sesión ingresa el código de 6 dígitos
-        que hemos enviado a tu correo.
-      </p>
-      <div id="otp" class="d-flex gap-2 col-xl-8 col-12">
-        <input
-          type="text"
-          maxlength="1"
-          class="otp-input form-control text-center"
-        />
-        <input
-          type="text"
-          maxlength="1"
-          class="otp-input form-control text-center"
-        />
-        <input
-          type="text"
-          maxlength="1"
-          class="otp-input form-control text-center"
-        />
-        <div id="divide-code"></div>
-        <input
-          type="text"
-          maxlength="1"
-          class="otp-input form-control text-center"
-        />
-        <input
-          type="text"
-          maxlength="1"
-          class="otp-input form-control text-center"
-        />
-        <input
-          type="text"
-          maxlength="1"
-          class="otp-input form-control text-center"
-        />
+      <div class="col-12 col-md-6 col-lg-6 d-flex flex-column">
+        <p
+          class="parragraph-yellow col-xl-8 col-sm-8 pt-4 ml-5"
+          id="confirmation-p"
+        >
+          Hemos enviado un mensaje de confirmación a la dirección de correo que
+          has proporcionado. para iniciar sesión ingresa el código de 6 dígitos
+          que hemos enviado a tu correo.
+        </p>
       </div>
+      <div class="row flex-column" id="input-n-buttons">
+        <div id="otp" class="d-flex gap-2 col-12 my-4">
+          <input
+            type="text"
+            maxlength="1"
+            class="otp-input form-control text-center"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            class="otp-input form-control text-center"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            class="otp-input form-control text-center"
+          />
+          <div id="divide-code"></div>
+          <input
+            type="text"
+            maxlength="1"
+            class="otp-input form-control text-center"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            class="otp-input form-control text-center"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            class="otp-input form-control text-center"
+          />
+        </div>
 
-      <button class="btn btn-custom" class="cornfirmation-button">
-        Confirmar código
-      </button>
+        <button id="confirmation-button" class="btn btn-custom col-12">
+          Confirmar código
+        </button>
+        <a id="return-to-login" class="yellow-a col-12 mt-4">volver</a>
+      </div>
     </div>
     <script>
       const inputs = document.querySelectorAll(".otp-input");
